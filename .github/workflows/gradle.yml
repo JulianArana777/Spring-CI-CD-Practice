@@ -37,4 +37,6 @@ jobs:
         name: euznsazzad/spring-boot-ci-ci
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+    - name: Deploy to production
+      run: curl  ${{ secrets.RENDER_HOOK }}
 
