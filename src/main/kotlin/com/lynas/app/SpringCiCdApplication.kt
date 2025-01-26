@@ -50,3 +50,10 @@ class BookService(val bookRepository: BookRepository) {
 		}
 	}
 }
+
+@RestController
+class DemoController {
+
+	@GetMapping("/")
+	fun demo() = "Hello, World!"
+}
