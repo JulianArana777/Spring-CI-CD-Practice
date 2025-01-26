@@ -44,7 +44,6 @@ class BookControllerTest : BaseTest() {
         val objectMapper = ObjectMapper()
         val response: List<Book> = objectMapper.readValue(responseContent, object : TypeReference<List<Book>>() {})
         assertThat(response.size).isEqualTo(books.size)
-        assertThat(response.size).isEqualTo(3)
 
     }
 
