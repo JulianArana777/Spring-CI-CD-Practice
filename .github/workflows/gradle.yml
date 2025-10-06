@@ -32,7 +32,7 @@ jobs:
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
-          name: julianarana777/spring-boot-ci-cd
+          name: julianarana777/spring-boot-ci-ci
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Deploy to render
